@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="number_system.css">
+</head>
+<body>
+    <div class="container">
+        <!-- <h1>subhas</h1> -->
+        <h1>number_s Based Conversion</h1>
+        <label>Number:</label>
+        <input id="d1" type="text" placeholder="Enter number" /><br>
+
+        <div class="form-group">
+            <label>From:</label>
+            <select id="finp">
+                <!-- <h1>subhas</h1> -->
+                <option value="b">Binary Number</option>
+                <option value="o">Octal Number</option>
+                <option value="h">Hexadecimal Number</option>
+                <option value="d">Decimal Number</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>To:</label>
+            <select id="tinp">
+                <option value="b">Binary Number</option>
+                <option value="o">Octal Number</option>
+                <option value="h">Hexadecimal Number</option>
+                <option value="d">Decimal Number</option>
+            </select>
+        </div>
+
+        <button type="button" onclick="convert()">Convert</button>
+
+        <br><br>
+
+        <label>Result:</label>
+        <input type="text" id="res" readonly />
+    </div>
+    <script src="number_system.js"></script>
+</body>
+</html>
